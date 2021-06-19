@@ -35,7 +35,7 @@
                         </dd>
                         <dt>お問い合わせ</dt>
                         <dd>
-                            <textarea name="toiawase" rows="7" col="40"></textarea>
+                            <textarea name="toiawase" rows="7" cols="40"></textarea>
                         </dd>
                         <dt><input type="submit" value="送信"></dt>
                     </dl>
