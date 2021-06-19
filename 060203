@@ -1,0 +1,57 @@
+<!--index.html-->
+
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/styles.css">
+        <title>サンプル</title>
+    </head>
+    <body>
+        <header>
+            <h3>アンケートの入力をお願いします</h3>
+        </header>
+        <main>
+            <section>
+                <form action="result.html" method="get">
+                    <dl>
+                        <dt><label for="simei">氏名</label></dt>
+                        <dd><input type="text" id="simei" name="simei" maxlength="10"></dd>
+
+                        <dt>性別</dt>
+                        <dd>
+                            <label for="dansei">男性</label><input type="radio" name="seibetu" id="dansei" value="1" checked>
+                            <label for="josei">女性</label><input type="radio" name="seibetu" id="josei" value="2">
+                        </dd>
+                        <dt>この店をどこで知りましたか？</dt>
+                        <dd>
+                            <label for="tv">テレビ</label><input type="checkbox" id="tv" name="tv">
+                            <label for="inet">インターネット</label><input type="checkbox" id="inet" name="inet">
+                            <label for="dm">DM</label><input type="checkbox" id="dm" name="dm">
+                            <label for="other">その他</label><input type="checkbox" id="other" name="other">
+                        </dd>
+                        <dt><input type="submit" value="送信"></dt>
+                    </dl>
+            </section>
+        </main>
+    </body>
+</html>
+
+<!---------------------------------------------------------------------------------------------------------------------->
+<!--result.html-->
+
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/styles.css">
+        <title>結果</title>
+    </head>
+    <body>
+        <h2>ご協力ありがとうございました。</h2>
+        <header></header>
+        <main></main>
+    </body>
+</html>
+
+
