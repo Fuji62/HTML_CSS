@@ -1,0 +1,63 @@
+<!--index.html-->
+
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/styles.css">
+        <title>ご意見・お問い合わせ</title>
+    </head>
+    <body>
+        <header>
+            <h3>質問の内容を下記のフォームに入力してください</h3>
+        </header>
+        <main>
+            <section>
+                <form action="result.html" method="get">
+                    <dl>
+                        <dt>質問の内容</dt>
+                        <dd>
+                            <select name="situmon">
+                                <option value="1">企業内容</option>
+                                <option value="2">業務内容</option>
+                                <option value="3">採用情報</option>
+                                <option value="4">その他</option>
+                            </select>
+                        </dd>
+                        <dt>詳　細</dt>
+                        <dd>
+                            <select name="syosai" multiple>
+                                <option value="1">資本金・従業員数</option>
+                                <option value="2">転勤について</option>
+                                <option value="3">経験等の有無</option>
+                                <option value="4">サークル活動</option>
+                            </select>
+                        </dd>
+                        <dt>お問い合わせ</dt>
+                        <dd>
+                            <textarea name="toiawase" rows="7" col="40"></textarea>
+                        </dd>
+                        <dt><input type="submit" value="送信"></dt>
+                    </dl>
+            </section>
+        </main>
+    </body>
+</html>
+
+<!------------------------------------------------------------------------------->
+<!--result.html-->
+
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/styles.css">
+        <title>リザルト</title>
+    </head>
+    <body>
+        <h2>回答結果を受けつけました。</h2>
+        <header></header>
+        <main></main>
+    </body>
+</html>
+
