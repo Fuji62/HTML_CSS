@@ -1,0 +1,70 @@
+<!--index.html-->
+
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/styles.css">
+        <title>メール作成</title>
+    </head>
+    <body>
+        <header>
+            <h3>メール作成</h3>
+        </header>
+        <main>
+            <section>
+                <form action="result.html" method="get">
+                    <dl>
+                        <dt><label for="mail">メールアドレス</label></dt>
+                        <dd>
+                            <select id="mail" name="mail">
+                                <option value="0"></option>
+                                <option value="1">suzuki@abc.co.jp</option>
+                                <option value="2">sato@def.co.jp</option>
+                                <option value="3">takahasi@ghi.co.jp</option>
+                            </select>
+                        </dd>
+                        <dt>同時送信</dt>
+                        <dd>
+                            <label for="cc">CC</label><input type="radio" name="transmission" id="cc" value="1" checked>
+                            <label for="bcc">BCC</label><input type="radio" name="transmission" id="bcc" value="2">
+                        </dd>
+                        <dt><label for="douji">同時送信</label></dt>
+                        <dd>
+                            <input type="text" name="douji" id="douji" placeholder="xxxxxx@xx.xx.xx">
+                        </dd>
+
+                        <dt><label for="honbun">本文</label></dt>
+                        <dd>
+                            <textarea id="honbun" rows="10" cols="70"></textarea>
+                        </dd>
+                        <dt><input type="submit" value="送信"></dt>
+                    </dl>
+            </section>
+        </main>
+    </body>
+</html>
+
+<!------------------------------------------------------------------------------------>
+
+<!--styles.css-->
+
+body{
+  font-family: 游ゴシック;
+  font-size: 18px;
+  margin: 20px;
+}
+[type="text"]{
+  width: 300px;
+}
+[type="radio"]{
+  margin-right: 15px;
+}
+dt{
+  color: red;
+  }
+
+<!------------------------------------------------------------------------------------>
+
+
+
