@@ -1,0 +1,40 @@
+<!--index.html-->
+
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/styles.css">
+        <title>新卒採用エントリーフォーム</title>
+    </head>
+    <body>
+        <header>
+            <h3>新卒採用エントリーフォーム/h3>
+        </header>
+        <main>
+            <section>
+                <form action="result.html" method="get">
+                    <dl>
+                        <dt><label for="simei">氏名</label></dt>
+                        <dd><input type="text" id="simei" name="simei" maxlength="10"></dd>
+
+                        <dt>性別</dt>
+                        <dd>
+                            <label for="dansei">男性</label><input type="radio" name="seibetu" id="dansei" value="1" checked>
+                            <label for="josei">女性</label><input type="radio" name="seibetu" id="josei" value="2">
+                        </dd>
+                        <dt>希望職種</dt>
+                        <dd>
+                            <select name="syokusyu">
+                                <option value="1">企画営業</option>
+                                <option value="2">開発設計</option>
+                                <option value="3">製造技術</option>
+                                <option value="4">一般事務</option>
+                            </select>
+                        </dd>
+                        <dt><input type="submit" value="送信"></dt>
+                    </dl>
+            </section>
+        </main>
+    </body>
+</html>
