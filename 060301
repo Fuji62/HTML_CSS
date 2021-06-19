@@ -44,7 +44,7 @@
                         </dd>
                         <dt><label for="comment">どこでお知りになりましたか？</label></dt>
                         <dd>
-                            <textarea col="20" raws="5" id="comment" name="comment"></textarea>
+                            <textarea cols="20" rows="5" id="comment" name="comment"></textarea>
                         </dd>                        
                         <dt><input type="submit" value="送信"></dt>
                     </dl>
