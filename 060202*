@@ -83,7 +83,7 @@
                         </dd>
                         <dt>ご意見・感想</dt>
                             <dd>
-                                <textarea name="toiawase" rows="10" col="50"></textarea>
+                                <textarea name="toiawase" rows="10" cols="50"></textarea>
                             </dd>
                         <dt><input type="submit" value="送信"></dt>
                     </dl>
