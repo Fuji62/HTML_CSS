@@ -1,0 +1,75 @@
+<!--index.html-->
+
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/styles.css">
+        <title>お問い合わせフォーム</title>
+    </head>
+    <body>
+        <header>
+            <h3>お問い合わせフォーム</h3>
+            <p>質問の内容を下記のフォームに入力してください</p>
+        </header>
+        <main>
+            <section>
+                <form action="result.html" method="get">
+                    <dl>
+                        <dt>お問い合わせの種別</dt>
+                    
+                        <dd>
+                            <input type="checkbox" id="q1" name="category" value="1">
+                            <label for="q1">お問い合わせ</label>
+                            <input type="checkbox" id="q2" name="category" value="2">
+                            <label for="q2">新規お申込み</label>
+                            <input type="checkbox" id="q3" name="category" value="3">
+                            <label for="q3">資料請求</label>
+                        </dd>
+                        <dt><label for="simei">お名前</label><span>※</span></dt>
+                        <dd>
+                            <input type="text" name="simei" id="simei" placeholder="田中　太郎">
+                        </dd>
+                        <dt><label for="mail">メールアドレス</label><span>※</span></dt>
+                        <dd>
+                            <input type="text" name="mail" id="mail" placeholder="sample@test.com">
+                        </dd>
+                        <dt><label for="know">どこでお知りになりましたか？</label></dt>
+                        <dd>
+                            <select id="know" name="know">
+                                <option value="1">チラシ</option>
+                                <option value="2">知り合いからの紹介</option>
+                                <option value="3">その他</option>
+                            </select>
+                        </dd>
+                        <dt><label for="comment">どこでお知りになりましたか？</label></dt>
+                        <dd>
+                            <textarea col="20" raws="5" id="comment" name="comment"></textarea>
+                        </dd>                        
+                        <dt><input type="submit" value="送信"></dt>
+                    </dl>
+            </section>
+        </main>
+    </body>
+</html>
+
+
+<!------------------------------------------------------------------------------------>
+
+<!--styles.css-->
+
+body{
+  font-family: 游ゴシック;
+  font-size: 18px;
+}
+[type="text"]{
+  width: 250px;
+}
+span{
+  color: #F00;
+  font-weight: bold;
+}
+
+<!------------------------------------------------------------------------------------>
+
+
