@@ -1,0 +1,60 @@
+<!--index.html-->
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="css/styles.css">
+<title>CSSの練習</title>
+</head>
+<body>
+    <header>
+        <h2>YAHOO JAPAN!!!</h2>
+    </header>
+    <main>
+        <nav>
+            <ul>
+                <li><a href="https://news.yahoo.co.jp/" target="_blank">ニュース</a></li>
+                <li><a href="https://news.yahoo.co.jp/business" target="_blank">経済</a></li>
+                <li><a href="https://news.yahoo.co.jp/entertainment" target="_blank">エンタメ</a></li>
+                <li><a href="https://news.yahoo.co.jp/sports" target="_blank">スポーツ</a></li>
+                <li><a href="https://news.yahoo.co.jp/domestic" target="_blank">国内</a></li>
+            </ul>
+        </nav>
+    </main>
+</body>
+</html>
+
+<!--------------------------------------------------------------------------------------------------->
+/*styles.css*/
+
+body{
+    font-family: 游ゴシック;
+    font-size: 12px;
+    padding: 20px;
+    width: 700px;
+}
+h2{
+    color: red;
+}
+li{
+    display: inline;
+    list-style: none;
+    padding-right: 20px;
+}
+a{
+    text-decoration: none;
+}
+a:link{
+    color:blue;
+}
+a:visited{
+    color:red;
+}
+a:hover{
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+
