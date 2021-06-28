@@ -1,0 +1,100 @@
+<!--index.html-->
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="css/styles.css">
+<title>CSSの練習</title>
+</head>
+<body>
+    <header>
+        <h2>JR西日本</h2>
+        <p>新大阪～博多までの停車駅</p>
+    </header>
+    <main>
+        <section>
+            <table>
+                <tr>
+                    <th>停車駅</th>
+                    <th>みずほ601号</th>
+                    <th>さくら541号</th>
+                </tr>
+                <tr>
+                    <td class="nozomi">新大阪</td>
+                    <td>6:00</td>
+                    <td>6:25</td>
+                </tr>
+                <tr>
+                    <td class="nozomi">新神戸</td>
+                    <td>6:12</td>
+                    <td>6:37</td>
+                </tr>
+                <tr>
+                    <td>姫路</td>
+                    <td>6:29</td>
+                    <td>6:53</td>
+                </tr>
+                <tr>
+                    <td>岡山</td>
+                    <td>6:50</td>
+                    <td>7:14</td>
+                </tr>
+                <tr>
+                    <td class="nozomi">広島</td>
+                    <td>7:25</td>
+                    <td>7:55</td>
+                </tr>
+                <tr>
+                    <td class="nozomi">小倉</td>
+                    <td>8:11</td>
+                    <td>8:47</td>
+                </tr>
+                <tr>
+                    <td class="nozomi">博多</td>
+                    <td>8:28</td>
+                    <td>9:04</td>
+                </tr>
+            </table>
+        </section>
+    </main>
+</body>
+</html>
+
+<!----------------------------------------------------------------------------
+/*styles.css*/
+
+body{
+    font-family: 游ゴシック;
+    font-size: 14px;
+    padding: 20px;
+    width: 700px;
+}
+table{
+    border: black solid 1px;
+    border-collapse: collapse;
+    width: 400px;
+}
+td, th{
+    border: black solid 1px;
+}
+th{
+    background-color:#ccc;
+}
+td{
+    padding-left: 15px;
+}
+td:first-child{
+    color: blue;
+    font-weight: bold;
+}
+tr:nth-child(2n){
+    background-color: aliceblue;
+}
+.nozomi::after{
+    content: "★";
+}
+
+
+
+>
