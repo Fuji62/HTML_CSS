@@ -107,7 +107,7 @@ footer dt{
     float: left;
 }
 footer dd{
-    padding: 100px;
+    padding-left: 100px;
 }
 /*********************************/
 .home main img{
