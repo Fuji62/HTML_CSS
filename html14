@@ -2,7 +2,7 @@
 
 <!DOCTYPE html>
 <html lang ="ja">
-    <head class="home">
+    <head>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="css/styles.css">
         <link rel="stylesheet" href="css/normalize.css">
@@ -36,7 +36,7 @@
                             猫ちゃんがご来店をお待ちしています。
                         </p>
                     </div>
-                    <img src="images/top04.png" alt="猫">
+                    <img src="images/top01.png" alt="猫">
                 </section>
                 <section>
                     <div>
@@ -64,11 +64,13 @@
     </body>
 </html>
 
-
 ------------------------------------------------------------------------------------
 /*styles.css*/
 
 @charset "UTF-8";
+/*********************************/
+/*index.html*/
+/*********************************/
 body{
     font-family: "BIZ UD明朝 Medium";
     font-size: 16px;
@@ -145,6 +147,230 @@ footer dd{
 .home main section:first-child div{
     padding-left: 40px;
 }
+
+/*********************************/
+/*guide.html*/
+/*********************************/
+/*パンくずリスト*/
+main .title{
+    margin: 50px;
+}
+main .title ol{
+    display: flex;
+    list-style: none;
+}
+main .title ol li:after{
+    content: "＞";
+    margin: 0px 10px;
+}
+main .title ol li:last-child:after{
+    content: none;
+}
+/*********************************/
+.guide main .inner .gazou{
+    background-color: bisque;
+    margin-top: 10px;
+    text-align: center;
+}
+.guide main .inner .gazou img{
+    width: 300px;
+}
+.guide main .about{
+    display: flex;
+}
+.guide main .about div{
+    margin: 0% 5%;
+    width: 40%;
+}
+.guide main dd{
+    padding-left: 5em;
+}
+.guide main table{
+    width: 100%;
+    text-align: center;
+}
+.guide main table, .guide main table th, .guide main table td{
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+}
+.guide main table th, .guide main table td{
+    margin: 5px;
+}
+.guide main table th{
+    background-color: #f7f0f0;
+    color: #998484;
+}
+
+/*********************************/
+/*access.html*/
+/*********************************/
+.access main .inner{
+    margin: 20px;
+}
+.access main .inner dt{
+    float: left;
+}
+.access main .inner dd{
+    margin-left: 200px;
+}
+
+
+/*********************************/
+.title{
+    background-color: aquamarine;
+    padding: 50px;
+}
+
+
+<!----------------------------------------------------------------------------------->
+
+<!--guide.html-->
+
+<!DOCTYPE html>
+<html lang ="ja">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/normalize.css">
+        <title>Ring's Garden</title>
+    </head>
+    <body class="guide">
+        <header>
+            <h1>Ring's Garden</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">ホーム</a></li>
+                    <li><a href="guide.html">ご利用案内</a></li>
+                    <li><a href="cast.html">キャスト紹介</a></li>
+                    <li><a href="contact.html">お問い合わせ</a></li>
+                    <li><a href="access.html">交通アクセス</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="title">
+                <h1>ご利用案内</h1>
+                <ol>
+                    <li><a href="index.html">ホーム</a></li>
+                    <li>ご利用案内</li>
+                </ol>
+            </div>
+            <div class="inner">
+                <div class="gazou">
+                    <img src="images/guide.png" alt="おもちゃで遊ぶ猫ちゃん">
+                </div>
+                <div class="about">
+                    <h2>営業時間</h2>
+                    <dl>
+                        <dt>平日</dt>
+                        <dd>11：30～19：00（最終受付18：30）</dd>
+                        <dt>土日祝日</dt>
+                        <dd>10：30～19：00（最終受付18：30）</dd>
+                        <dt>定休日</dt>
+                        <dd>毎週火曜日</dd>
+                        <p>※臨時休業日はホームページで随時お知らせします。</p>
+                    </dl>
+                </div>
+                <div>
+                    <h2>料金表</h2>
+                    <table>
+                        <tr>
+                            <th></th>
+                            <th>30分コース</th>
+                            <th>60分コース</th>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">平日</td>
+                            <td>550円</td>
+                            <td>1000円</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">延長料金15分ごとにプラス200円</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">土日祝日</td>
+                            <td>600円</td>
+                            <td>1100円</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">延長料金15分ごとにプラス300円</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <h2>お店からのお願い</h2>
+            <ul>
+                <li>ご入場の前に、入口の手洗い場で手をハンドソープで洗ってからアルコール消毒をしていただきます。</li>
+                <li>店内は禁煙となっております。</li>
+                <li>猫を無理やり抱っこしたり、寝ている猫を起こすなどの猫が嫌がる行為はご遠慮ください。</li>
+                <li>写真撮影はOKです。その際、フラッシュを消して撮影するようにお願いいたします。</li>
+            </ul>
+        </footer>
+    </body>
+</html>
+
+
+<!----------------------------------------------------------------------------------->
+
+<!--access.html-->
+
+<!DOCTYPE html>
+<html lang ="ja">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/normalize.css">
+        <title>Ring's Garden</title>
+    </head>
+    <body class="access">
+        <header>
+            <h1>Ring's Garden</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">ホーム</a></li>
+                    <li><a href="guide.html">ご利用案内</a></li>
+                    <li><a href="cast.html">キャスト紹介</a></li>
+                    <li><a href="contact.html">お問い合わせ</a></li>
+                    <li><a href="access.html">交通アクセス</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="title">
+                <h1>交通アクセス</h1>
+                <ol>
+                    <li><a href="index.html">ホーム</a></li>
+                    <li>交通アクセス</li>
+                </ol>
+            </div>
+            <div class="inner">
+                <dl>
+                    <dt>所在地</dt>
+                    <dd>〒813-0044 福岡市東区千早4丁目24-1</dd>
+                    <dt>アクセスJRの場合</dt>
+                    <dd>JR「千早駅」下車徒歩5分</dd>
+                    <dt>アクセス西鉄の場合</dt>
+                    <dd>西鉄「千早駅」下車徒歩7分</dd>
+                </dl>
+                <iframe src="https://www.google.co.jp/maps/place/%E7%A6%8F%E5%B2%A1%E7%9C%8C%E7%AB%8B%E7%A6%8F%E5%B2%A1%E9%AB%98%E7%AD%89%E6%8A%80%E8%A1%93%E5%B0%82%E9%96%80%E6%A0%A1/@33.6515921,130.4300814,15z/data=!3m2!4b1!5s0x35418f1bd179e02f:0x7f9a1191227b8547!4m5!3m4!1s0x35418f1bd04c7f25:0x7fa53cb68ff99959!8m2!3d33.6515745!4d130.4388147?hl=ja" width="500" height="300"></iframe>
+            </div>
+        </main>
+        <footer>
+            <h2>連絡先</h2>
+            <dl>
+                <dt>TEL</dt>
+                <dd>092-681-0263</dd>
+                <dt>FAX</dt>
+                <dd>092-681-0263</dd>
+                <dt>E-mail</dt>
+                <dd>xxx@xx.xx.xx</dd>
+            </dl>
+        </footer>
+    </body>
+</html>
+
 
 
 
